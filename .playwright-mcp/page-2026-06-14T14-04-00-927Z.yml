@@ -1,0 +1,48 @@
+- generic [ref=e4]:
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: GEGO
+      - generic [ref=e9]: Back Office
+    - navigation [ref=e10]:
+      - link "Tableau de bord" [ref=e20] [cursor=pointer]:
+        - /url: /admin/dashboard
+        - img [ref=e21]: dashboard
+        - generic [ref=e22]: Tableau de bord
+      - link "Entreprises" [ref=e23] [cursor=pointer]:
+        - /url: /admin/companies
+        - img [ref=e24]: business
+        - generic [ref=e25]: Entreprises
+      - link "Destinations" [ref=e26] [cursor=pointer]:
+        - /url: /admin/destinations
+        - img [ref=e27]: map
+        - generic [ref=e28]: Destinations
+      - link "Utilisateurs" [ref=e29] [cursor=pointer]:
+        - /url: /admin/users
+        - img [ref=e30]: people
+        - generic [ref=e31]: Utilisateurs
+    - generic [ref=e11]: GEGO v1.0
+  - generic [ref=e12]:
+    - generic [ref=e13]:
+      - button "Ouvrir le menu" [ref=e14] [cursor=pointer]:
+        - img [ref=e15]: menu
+      - generic [ref=e33]:
+        - generic [ref=e35]: SA
+        - generic [ref=e36]:
+          - generic [ref=e37]: Super Admin
+          - generic [ref=e38]: Super Admin
+        - button "Menu utilisateur" [ref=e39] [cursor=pointer]:
+          - img [ref=e40]: expand_more
+    - main [ref=e18]:
+      - generic [ref=e43]:
+        - generic [ref=e45]:
+          - heading "Destinations" [level=1] [ref=e46]
+          - paragraph [ref=e47]: 0 régions · 0 villes
+        - generic [ref=e48]:
+          - button "Régions (0)" [ref=e49] [cursor=pointer]
+          - button "Villes (0)" [ref=e50] [cursor=pointer]
+        - progressbar [ref=e52]:
+          - img [ref=e54]
+          - generic [ref=e57]:
+            - img [ref=e59]
+            - img [ref=e62]
+            - img [ref=e65]

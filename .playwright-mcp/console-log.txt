@@ -1,0 +1,70 @@
+Total messages: 9 (Errors: 2, Warnings: 0)
+Returning 27 messages for level "debug"
+
+[DEBUG] [vite] connecting... @ http://localhost:4200/@vite/client:732
+[DEBUG] [vite] connected. @ http://localhost:4200/@vite/client:826
+[LOG] Angular is running in development mode. @ http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:11229
+[DEBUG] [vite] connecting... @ http://localhost:4200/@vite/client:732
+[DEBUG] [vite] connected. @ http://localhost:4200/@vite/client:826
+[LOG] Angular is running in development mode. @ http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:11229
+[DEBUG] [vite] connecting... @ http://localhost:4200/@vite/client:732
+[LOG] Angular is running in development mode. @ http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:11229
+[DEBUG] [vite] connected. @ http://localhost:4200/@vite/client:826
+[ERROR] ERROR TypeError: Cannot read properties of undefined (reading 'length')
+    at DestinationListComponent_Template (http://localhost:4200/chunk-PLKAYQXW.js:462:58)
+    at executeTemplate (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:5343:5)
+    at refreshView (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6007:7)
+    at detectChangesInView (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6147:5)
+    at detectChangesInViewIfAttached (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6130:3)
+    at detectChangesInComponent (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6121:5)
+    at detectChangesInChildComponents (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6169:5)
+    at detectChangesInView (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6157:9)
+    at detectChangesInViewIfAttached (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6130:3)
+    at detectChangesInEmbeddedViews (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6101:7) @ http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-HYYW5S3W.js?v=580c8cec:3169
+[DEBUG] [vite] connecting... @ http://localhost:4200/@vite/client:732
+[LOG] Angular is running in development mode. @ http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:11229
+[DEBUG] [vite] connected. @ http://localhost:4200/@vite/client:826
+[LOG] [LocationService] loadAll called {isSuperAdmin: true} @ http://localhost:4200/chunk-S2XD5PNB.js:55
+[LOG] [LocationService] loadRegions next undefined @ http://localhost:4200/chunk-S2XD5PNB.js:62
+[LOG] [LocationService] loadRegions finalize @ http://localhost:4200/chunk-S2XD5PNB.js:59
+[ERROR] ERROR TypeError: Cannot read properties of undefined (reading 'length')
+    at DestinationListComponent_Template (http://localhost:4200/chunk-S2XD5PNB.js:474:58)
+    at executeTemplate (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:5343:5)
+    at refreshView (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6007:7)
+    at detectChangesInView (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6147:5)
+    at detectChangesInViewIfAttached (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6130:3)
+    at detectChangesInComponent (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6121:5)
+    at detectChangesInChildComponents (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6169:5)
+    at detectChangesInView (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6157:9)
+    at detectChangesInViewIfAttached (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6130:3)
+    at detectChangesInEmbeddedViews (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6101:7) @ http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-HYYW5S3W.js?v=580c8cec:3169
+[LOG] [LocationService] loadCities next undefined @ http://localhost:4200/chunk-S2XD5PNB.js:69
+[DEBUG] [vite] connecting... @ http://localhost:4200/@vite/client:732
+[LOG] Angular is running in development mode. @ http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:11229
+[DEBUG] [vite] connected. @ http://localhost:4200/@vite/client:826
+[LOG] [LocationService] loadAll called {isSuperAdmin: true} @ http://localhost:4200/chunk-S2XD5PNB.js:55
+[LOG] [LocationService] loadCities next undefined @ http://localhost:4200/chunk-S2XD5PNB.js:69
+[ERROR] ERROR TypeError: Cannot read properties of undefined (reading 'length')
+    at DestinationListComponent_Template (http://localhost:4200/chunk-S2XD5PNB.js:474:100)
+    at executeTemplate (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:5343:5)
+    at refreshView (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6007:7)
+    at detectChangesInView (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6147:5)
+    at detectChangesInViewIfAttached (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6130:3)
+    at detectChangesInComponent (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6121:5)
+    at detectChangesInChildComponents (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6169:5)
+    at detectChangesInView (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6157:9)
+    at detectChangesInViewIfAttached (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6130:3)
+    at detectChangesInEmbeddedViews (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6101:7) @ http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-HYYW5S3W.js?v=580c8cec:3169
+[LOG] [LocationService] loadRegions next undefined @ http://localhost:4200/chunk-S2XD5PNB.js:62
+[LOG] [LocationService] loadRegions finalize @ http://localhost:4200/chunk-S2XD5PNB.js:59
+[ERROR] ERROR TypeError: Cannot read properties of undefined (reading 'length')
+    at DestinationListComponent_Template (http://localhost:4200/chunk-S2XD5PNB.js:474:58)
+    at executeTemplate (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:5343:5)
+    at refreshView (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6007:7)
+    at detectChangesInView (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6147:5)
+    at detectChangesInViewIfAttached (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6130:3)
+    at detectChangesInComponent (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6121:5)
+    at detectChangesInChildComponents (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6169:5)
+    at detectChangesInView (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6157:9)
+    at detectChangesInViewIfAttached (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6130:3)
+    at detectChangesInEmbeddedViews (http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-3A5K2POE.js?v=580c8cec:6101:7) @ http://localhost:4200/@fs/home/londo/Bureau/mes_projets/gego-back-office/.angular/cache/21.2.13/gego-back-office/vite/deps/chunk-HYYW5S3W.js?v=580c8cec:3169

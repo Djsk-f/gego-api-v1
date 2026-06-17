@@ -1,0 +1,183 @@
+- generic [ref=e3]:
+  - generic:
+    - banner [ref=e4]:
+      - link "GEGO GEGO" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "GEGO" [ref=e7]
+        - generic [ref=e8]: GEGO
+      - navigation [ref=e9]:
+        - link "Accueil" [ref=e10] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e11] [cursor=pointer]:
+          - /url: /services
+        - link "Application" [ref=e12] [cursor=pointer]:
+          - /url: /mobile
+        - link "Contact" [ref=e13] [cursor=pointer]:
+          - /url: /contact
+      - button " Connexion" [ref=e15] [cursor=pointer]:
+        - generic [ref=e16]: 
+        - text: Connexion
+    - dialog [ref=e230]:
+      - generic [ref=e234]:
+        - button "Fermer" [active] [ref=e235] [cursor=pointer]:
+          - generic [ref=e236]: 
+        - generic [ref=e237]:
+          - img "GEGO" [ref=e238]
+          - generic [ref=e239]:
+            - generic [ref=e240]: GEGO
+            - generic [ref=e241]: Back Office
+        - generic [ref=e242]:
+          - heading "Connexion" [level=2] [ref=e243]
+          - paragraph [ref=e244]: Accédez à votre espace d'administration
+          - generic [ref=e245]:
+            - generic [ref=e246]:
+              - generic [ref=e247]: Identifiant
+              - generic [ref=e248]:
+                - generic [ref=e249]: 
+                - textbox "Identifiant" [ref=e250]:
+                  - /placeholder: Email ou téléphone
+                  - text: superadmin@gego.cm
+            - generic [ref=e251]:
+              - generic [ref=e252]: Mot de passe
+              - generic [ref=e253]:
+                - generic [ref=e254]: 
+                - textbox "Mot de passe" [ref=e255]:
+                  - /placeholder: ••••••••
+                  - text: Test123456
+            - button "Se connecter" [ref=e257] [cursor=pointer]
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - img "Passagers dans un bus" [ref=e20]
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - heading "Explorez sans limite" [level=1] [ref=e24]:
+            - text: Explorez
+            - text: sans limite
+          - paragraph [ref=e25]: Des voyages interurbains simplifiés à travers le Cameroun. Réservez, payez et partez en toute sérénité.
+        - img [ref=e28]:
+          - generic [ref=e47]: Yaoundé
+          - generic [ref=e50]: Douala
+          - generic [ref=e53]: Bafoussam
+          - generic [ref=e56]: Garoua
+          - generic [ref=e59]: Maroua
+          - generic [ref=e62]: Bertoua
+          - generic [ref=e65]: Bamenda
+          - generic [ref=e68]: Ngaoundéré
+          - generic [ref=e71]: Limbé
+          - generic [ref=e74]: Kumba
+          - generic [ref=e75]: Réseau GEGO
+    - generic [ref=e77]:
+      - generic [ref=e78]:
+        - generic [ref=e79]: 300+
+        - text: Lignes de transport
+      - generic [ref=e80]:
+        - generic [ref=e81]: 15M+
+        - text: Voyageurs vises / an
+      - generic [ref=e82]:
+        - generic [ref=e83]: 98%
+        - text: Satisfaction client
+      - generic [ref=e84]:
+        - generic [ref=e85]: 100%
+        - text: Numerique
+    - generic [ref=e86]:
+      - generic [ref=e87]:
+        - generic [ref=e88]: Nos services
+        - heading "Une solution pour chaque acteur" [level=2] [ref=e89]
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - generic [ref=e92]: 
+          - heading "Voyageurs" [level=3] [ref=e93]
+          - paragraph [ref=e94]: Réservez votre billet en ligne, choisissez votre siège et payez par mobile money.
+        - generic [ref=e95]:
+          - generic [ref=e96]: 
+          - heading "Agences" [level=3] [ref=e97]
+          - paragraph [ref=e98]: Gérez vos horaires, vos véhicules et vos réservations depuis un seul outil.
+        - generic [ref=e99]:
+          - generic [ref=e100]: 
+          - heading "Entreprises" [level=3] [ref=e101]
+          - paragraph [ref=e102]: Contrôlez votre flotte, analysez vos performances et développez votre réseau.
+    - generic [ref=e104]:
+      - generic [ref=e105]:
+        - img "Application GEGO" [ref=e106]
+        - button "QR code billet — cliquez pour retourner" [ref=e107] [cursor=pointer]:
+          - img [ref=e108]
+          - generic [ref=e143]: Scannez votre billet
+        - img [ref=e145]:
+          - generic [ref=e147]: Yaounde
+          - generic [ref=e149]: Douala
+          - generic [ref=e163]: QR Code
+          - generic [ref=e166]: Paiement
+          - generic [ref=e169]: Billet
+      - generic [ref=e172]:
+        - generic [ref=e173]: Application mobile
+        - heading "Vos billets dans votre poche" [level=2] [ref=e174]
+        - paragraph [ref=e175]: Scan, paye, embarque. L'application GEGO transforme chaque voyage en expérience fluide.
+        - generic [ref=e176]:
+          - link " Disponible sur Google Play" [ref=e177] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e178]: 
+            - generic [ref=e179]:
+              - generic [ref=e180]: Disponible sur
+              - generic [ref=e181]: Google Play
+          - link " Télécharger sur App Store" [ref=e182] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e183]: 
+            - generic [ref=e184]:
+              - generic [ref=e185]: Télécharger sur
+              - generic [ref=e186]: App Store
+    - generic [ref=e188]:
+      - heading "Prêt à voyager autrement ?" [level=2] [ref=e189]
+      - paragraph [ref=e190]: Rejoignez le mouvement de la mobilité numérisée au Cameroun.
+      - link "Découvrir GEGO" [ref=e191] [cursor=pointer]:
+        - /url: /services
+  - contentinfo [ref=e193]:
+    - generic [ref=e194]:
+      - generic [ref=e195]:
+        - text: GEGO
+        - paragraph [ref=e196]: La plateforme de reservation de voyages en Afrique. Simple, rapide et securisee.
+        - generic [ref=e197]:
+          - link "Facebook" [ref=e198] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e199]: 
+          - link "Twitter" [ref=e200] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e201]: 
+          - link "LinkedIn" [ref=e202] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e203]: 
+          - link "Instagram" [ref=e204] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e205]: 
+      - generic [ref=e206]:
+        - generic [ref=e207]:
+          - heading "Produit" [level=4] [ref=e208]
+          - link "Accueil" [ref=e209] [cursor=pointer]:
+            - /url: /
+          - link "Services" [ref=e210] [cursor=pointer]:
+            - /url: /services
+          - link "Application Mobile" [ref=e211] [cursor=pointer]:
+            - /url: /mobile
+          - link "Tarifs" [ref=e212] [cursor=pointer]:
+            - /url: /
+        - generic [ref=e213]:
+          - heading "Entreprise" [level=4] [ref=e214]
+          - link "A propos" [ref=e215] [cursor=pointer]:
+            - /url: /
+          - link "Carrieres" [ref=e216] [cursor=pointer]:
+            - /url: /
+          - link "Blog" [ref=e217] [cursor=pointer]:
+            - /url: /
+          - link "Contact" [ref=e218] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=e219]:
+          - heading "Contact" [level=4] [ref=e220]
+          - paragraph [ref=e221]:
+            - generic [ref=e222]: 
+            - text: Yaounde, Cameroun
+          - paragraph [ref=e223]:
+            - generic [ref=e224]: 
+            - text: +237 6 00 00 00 00
+          - paragraph [ref=e225]:
+            - generic [ref=e226]: 
+            - text: contact@gego.cm
+    - paragraph [ref=e228]: GEGO. Tous droits reserves.

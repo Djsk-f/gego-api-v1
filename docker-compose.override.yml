@@ -1,0 +1,16 @@
+version: '3.8'
+
+# Override for development: mounts source code and enables hot reload
+services:
+  api:
+    build:
+      target: builder
+    environment:
+      NODE_ENV: development
+      DATABASE_SYNCHRONIZE: "true"
+      DATABASE_LOGGING: "true"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run start:dev
+    restart: unless-stopped

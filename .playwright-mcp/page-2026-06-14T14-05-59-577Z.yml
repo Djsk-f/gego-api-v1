@@ -1,0 +1,172 @@
+- generic [ref=e4]:
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: GEGO
+      - generic [ref=e9]: Back Office
+    - navigation [ref=e10]:
+      - link "Tableau de bord" [ref=e20] [cursor=pointer]:
+        - /url: /admin/dashboard
+        - img [ref=e21]: dashboard
+        - generic [ref=e22]: Tableau de bord
+      - link "Entreprises" [ref=e23] [cursor=pointer]:
+        - /url: /admin/companies
+        - img [ref=e24]: business
+        - generic [ref=e25]: Entreprises
+      - link "Destinations" [ref=e26] [cursor=pointer]:
+        - /url: /admin/destinations
+        - img [ref=e27]: map
+        - generic [ref=e28]: Destinations
+      - link "Utilisateurs" [ref=e29] [cursor=pointer]:
+        - /url: /admin/users
+        - img [ref=e30]: people
+        - generic [ref=e31]: Utilisateurs
+    - generic [ref=e11]: GEGO v1.0
+  - generic [ref=e12]:
+    - generic [ref=e13]:
+      - button "Ouvrir le menu" [ref=e14] [cursor=pointer]:
+        - img [ref=e15]: menu
+      - generic [ref=e33]:
+        - generic [ref=e35]: SA
+        - generic [ref=e36]:
+          - generic [ref=e37]: Super Admin
+          - generic [ref=e38]: Super Admin
+        - button "Menu utilisateur" [ref=e39] [cursor=pointer]:
+          - img [ref=e40]: expand_more
+    - main [ref=e18]:
+      - generic [ref=e43]:
+        - generic [ref=e45]:
+          - heading "Destinations" [level=1] [ref=e46]
+          - paragraph [ref=e47]: 10 régions · 100 villes
+        - generic [ref=e48]:
+          - button "Régions (10)" [ref=e49] [cursor=pointer]
+          - button "Villes (100)" [ref=e50] [cursor=pointer]
+        - table [ref=e52]:
+          - rowgroup [ref=e53]:
+            - row "Nom Scope Compagnie Villes Statut Action" [ref=e54]:
+              - columnheader "Nom" [ref=e55]
+              - columnheader "Scope" [ref=e56]
+              - columnheader "Compagnie" [ref=e57]
+              - columnheader "Villes" [ref=e58]
+              - columnheader "Statut" [ref=e59]
+              - columnheader "Action" [ref=e60]
+          - rowgroup [ref=e61]:
+            - row "Adamaoua GLOBAL — 10 Active Activer/désactiver la région" [ref=e62]:
+              - cell "Adamaoua" [ref=e63]
+              - cell "GLOBAL" [ref=e64]:
+                - generic [ref=e65]: GLOBAL
+              - cell "—" [ref=e66]
+              - cell "10" [ref=e67]
+              - cell "Active" [ref=e68]
+              - cell "Activer/désactiver la région" [ref=e69]:
+                - switch "Activer/désactiver la région" [checked] [ref=e72] [cursor=pointer]:
+                  - generic [ref=e78]:
+                    - img [ref=e79]
+                    - img [ref=e81]
+            - row "Centre GLOBAL — 10 Active Activer/désactiver la région" [ref=e83]:
+              - cell "Centre" [ref=e84]
+              - cell "GLOBAL" [ref=e85]:
+                - generic [ref=e86]: GLOBAL
+              - cell "—" [ref=e87]
+              - cell "10" [ref=e88]
+              - cell "Active" [ref=e89]
+              - cell "Activer/désactiver la région" [ref=e90]:
+                - switch "Activer/désactiver la région" [checked] [ref=e93] [cursor=pointer]:
+                  - generic [ref=e99]:
+                    - img [ref=e100]
+                    - img [ref=e102]
+            - row "Est GLOBAL — 10 Active Activer/désactiver la région" [ref=e104]:
+              - cell "Est" [ref=e105]
+              - cell "GLOBAL" [ref=e106]:
+                - generic [ref=e107]: GLOBAL
+              - cell "—" [ref=e108]
+              - cell "10" [ref=e109]
+              - cell "Active" [ref=e110]
+              - cell "Activer/désactiver la région" [ref=e111]:
+                - switch "Activer/désactiver la région" [checked] [ref=e114] [cursor=pointer]:
+                  - generic [ref=e120]:
+                    - img [ref=e121]
+                    - img [ref=e123]
+            - row "Extrême Nord GLOBAL — 10 Active Activer/désactiver la région" [ref=e125]:
+              - cell "Extrême Nord" [ref=e126]
+              - cell "GLOBAL" [ref=e127]:
+                - generic [ref=e128]: GLOBAL
+              - cell "—" [ref=e129]
+              - cell "10" [ref=e130]
+              - cell "Active" [ref=e131]
+              - cell "Activer/désactiver la région" [ref=e132]:
+                - switch "Activer/désactiver la région" [checked] [ref=e135] [cursor=pointer]:
+                  - generic [ref=e141]:
+                    - img [ref=e142]
+                    - img [ref=e144]
+            - row "Littoral GLOBAL — 10 Active Activer/désactiver la région" [ref=e146]:
+              - cell "Littoral" [ref=e147]
+              - cell "GLOBAL" [ref=e148]:
+                - generic [ref=e149]: GLOBAL
+              - cell "—" [ref=e150]
+              - cell "10" [ref=e151]
+              - cell "Active" [ref=e152]
+              - cell "Activer/désactiver la région" [ref=e153]:
+                - switch "Activer/désactiver la région" [checked] [ref=e156] [cursor=pointer]:
+                  - generic [ref=e162]:
+                    - img [ref=e163]
+                    - img [ref=e165]
+            - row "Nord GLOBAL — 10 Active Activer/désactiver la région" [ref=e167]:
+              - cell "Nord" [ref=e168]
+              - cell "GLOBAL" [ref=e169]:
+                - generic [ref=e170]: GLOBAL
+              - cell "—" [ref=e171]
+              - cell "10" [ref=e172]
+              - cell "Active" [ref=e173]
+              - cell "Activer/désactiver la région" [ref=e174]:
+                - switch "Activer/désactiver la région" [checked] [ref=e177] [cursor=pointer]:
+                  - generic [ref=e183]:
+                    - img [ref=e184]
+                    - img [ref=e186]
+            - row "Nord Ouest GLOBAL — 10 Active Activer/désactiver la région" [ref=e188]:
+              - cell "Nord Ouest" [ref=e189]
+              - cell "GLOBAL" [ref=e190]:
+                - generic [ref=e191]: GLOBAL
+              - cell "—" [ref=e192]
+              - cell "10" [ref=e193]
+              - cell "Active" [ref=e194]
+              - cell "Activer/désactiver la région" [ref=e195]:
+                - switch "Activer/désactiver la région" [checked] [ref=e198] [cursor=pointer]:
+                  - generic [ref=e204]:
+                    - img [ref=e205]
+                    - img [ref=e207]
+            - row "Ouest GLOBAL — 10 Active Activer/désactiver la région" [ref=e209]:
+              - cell "Ouest" [ref=e210]
+              - cell "GLOBAL" [ref=e211]:
+                - generic [ref=e212]: GLOBAL
+              - cell "—" [ref=e213]
+              - cell "10" [ref=e214]
+              - cell "Active" [ref=e215]
+              - cell "Activer/désactiver la région" [ref=e216]:
+                - switch "Activer/désactiver la région" [checked] [ref=e219] [cursor=pointer]:
+                  - generic [ref=e225]:
+                    - img [ref=e226]
+                    - img [ref=e228]
+            - row "Sud GLOBAL — 10 Active Activer/désactiver la région" [ref=e230]:
+              - cell "Sud" [ref=e231]
+              - cell "GLOBAL" [ref=e232]:
+                - generic [ref=e233]: GLOBAL
+              - cell "—" [ref=e234]
+              - cell "10" [ref=e235]
+              - cell "Active" [ref=e236]
+              - cell "Activer/désactiver la région" [ref=e237]:
+                - switch "Activer/désactiver la région" [checked] [ref=e240] [cursor=pointer]:
+                  - generic [ref=e246]:
+                    - img [ref=e247]
+                    - img [ref=e249]
+            - row "Sud Ouest GLOBAL — 10 Active Activer/désactiver la région" [ref=e251]:
+              - cell "Sud Ouest" [ref=e252]
+              - cell "GLOBAL" [ref=e253]:
+                - generic [ref=e254]: GLOBAL
+              - cell "—" [ref=e255]
+              - cell "10" [ref=e256]
+              - cell "Active" [ref=e257]
+              - cell "Activer/désactiver la région" [ref=e258]:
+                - switch "Activer/désactiver la région" [checked] [ref=e261] [cursor=pointer]:
+                  - generic [ref=e267]:
+                    - img [ref=e268]
+                    - img [ref=e270]
