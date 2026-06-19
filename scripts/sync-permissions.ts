@@ -47,6 +47,10 @@ const ALL_PERMISSIONS: Permission[] = [
   { name: 'vehicle:read',       description: 'Read vehicles' },
   { name: 'vehicle:update',     description: 'Update vehicles' },
   { name: 'vehicle:delete',     description: 'Delete vehicles' },
+  { name: 'driver:create',      description: 'Create drivers' },
+  { name: 'driver:read',        description: 'Read drivers' },
+  { name: 'driver:update',      description: 'Update drivers' },
+  { name: 'driver:delete',      description: 'Delete drivers' },
   { name: 'booking:read',       description: 'Read bookings' },
   { name: 'booking:confirm',    description: 'Confirm bookings' },
   { name: 'ticket:read',        description: 'Read tickets' },
@@ -65,6 +69,10 @@ const ALL_PERMISSIONS: Permission[] = [
   { name: 'user:delete',        description: 'Delete users' },
   { name: 'location:manage',    description: 'Manage locations (regions/cities)' },
   { name: 'location:disable',   description: 'Disable cities for a company' },
+  { name: 'route:create',       description: 'Create routes' },
+  { name: 'route:read',         description: 'Read routes' },
+  { name: 'route:update',       description: 'Update routes' },
+  { name: 'route:delete',       description: 'Delete routes' },
 ];
 
 const ALL_PERMISSION_NAMES = ALL_PERMISSIONS.map((p) => p.name);
@@ -79,6 +87,7 @@ const ROLES_CONFIG: RoleConfig[] = [
     permissions: [
       'trip:create', 'trip:read', 'trip:update', 'trip:cancel',
       'vehicle:create', 'vehicle:read', 'vehicle:update', 'vehicle:delete',
+      'driver:create', 'driver:read', 'driver:update', 'driver:delete',
       'booking:read', 'booking:confirm',
       'ticket:read', 'ticket:validate',
       'agency:create', 'agency:read', 'agency:update', 'agency:delete',
@@ -86,6 +95,7 @@ const ROLES_CONFIG: RoleConfig[] = [
       'company:read', 'company:update', 'company:delete',
       'user:read', 'user:update', 'user:delete',
       'location:manage', 'location:disable',
+      'route:create', 'route:read', 'route:update', 'route:delete',
     ],
   },
   {
@@ -93,11 +103,13 @@ const ROLES_CONFIG: RoleConfig[] = [
     permissions: [
       'trip:create', 'trip:read', 'trip:update', 'trip:cancel',
       'vehicle:create', 'vehicle:read', 'vehicle:update', 'vehicle:delete',
+      'driver:create', 'driver:read', 'driver:update', 'driver:delete',
       'booking:read', 'booking:confirm',
       'ticket:read', 'ticket:validate',
       'agency:read',
       'agency:user:create', 'agency:user:update',
       'user:read',
+      'route:read',
     ],
   },
   {
@@ -112,6 +124,7 @@ const ROLES_CONFIG: RoleConfig[] = [
     name: 'VEHICLE_MANAGER',
     permissions: [
       'vehicle:create', 'vehicle:read', 'vehicle:update', 'vehicle:delete',
+      'driver:create', 'driver:read', 'driver:update', 'driver:delete',
       'trip:read',
     ],
   },

@@ -10,11 +10,9 @@ import {
 } from 'typeorm';
 import { Company } from '../../company/entities/company.entity';
 import { Booking } from '../../booking/entities/booking.entity';
-import { Driver } from '../../driver/entities/driver.entity';
 import { AgencyUserRole } from '../../role/entities/agency-user-role.entity';
 import { PricingRule } from '../../trip/entities/pricing-rule.entity';
 import { Trip } from '../../trip/entities/trip.entity';
-import { Vehicle } from '../../vehicle/entities/vehicle.entity';
 
 export enum AgencyStatus {
   ACTIVE = 'ACTIVE',
@@ -49,6 +47,9 @@ export class Agency {
   @Column({ type: 'enum', enum: AgencyStatus, default: AgencyStatus.ACTIVE })
   status!: AgencyStatus;
 
+  @Column({ type: 'decimal', precision: 3, scale: 1, default: 0 })
+  rating!: number;
+
   @ManyToOne(() => Company, (company) => company.agencies, {
     onDelete: 'CASCADE',
   })
@@ -56,12 +57,6 @@ export class Agency {
 
   @OneToMany(() => AgencyUserRole, (agencyUserRole) => agencyUserRole.agency)
   agencyUserRoles!: AgencyUserRole[];
-
-  @OneToMany(() => Vehicle, (vehicle) => vehicle.agency)
-  vehicles!: Vehicle[];
-
-  @OneToMany(() => Driver, (driver) => driver.agency)
-  drivers!: Driver[];
 
   @OneToMany(() => Trip, (trip) => trip.agency)
   trips!: Trip[];

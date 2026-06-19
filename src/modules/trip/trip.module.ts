@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { VehicleModule } from '../vehicle/vehicle.module';
 import { Trip } from './entities/trip.entity';
 import { PricingRule } from './entities/pricing-rule.entity';
 import { TripController } from './trip.controller';
@@ -8,7 +9,7 @@ import { PricingController } from './pricing.controller';
 import { PricingService } from './pricing.service';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([Trip, PricingRule])],
+  imports: [TypeOrmModule.forFeature([Trip, PricingRule]), VehicleModule],
   controllers: [TripController, PricingController],
   providers: [TripService, PricingService],
   exports: [TripService, PricingService],

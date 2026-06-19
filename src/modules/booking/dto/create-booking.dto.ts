@@ -6,6 +6,14 @@ export class CreateBookingDto {
   @IsUUID()
   tripId!: string;
 
+  @IsOptional()
+  @IsUUID()
+  departureStopId?: string;
+
+  @IsOptional()
+  @IsUUID()
+  arrivalStopId?: string;
+
   @IsArray()
   @ArrayMinSize(1)
   @ValidateNested({ each: true })

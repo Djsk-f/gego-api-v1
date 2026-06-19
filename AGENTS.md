@@ -102,6 +102,10 @@ Initial permissions:
 - `vehicle:read`
 - `vehicle:update`
 - `vehicle:delete`
+- `driver:create`
+- `driver:read`
+- `driver:update`
+- `driver:delete`
 - `booking:read`
 - `booking:confirm`
 - `ticket:read`

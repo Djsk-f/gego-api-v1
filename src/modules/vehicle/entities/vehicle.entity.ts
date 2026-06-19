@@ -3,13 +3,12 @@ import {
   CreateDateColumn,
   Entity,
   Index,
-  ManyToOne,
   OneToMany,
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
-import { Agency } from '../../agency/entities/agency.entity';
 import { Trip } from '../../trip/entities/trip.entity';
+import { VehicleMaintenanceLog } from './vehicle-maintenance-log.entity';
 
 export enum VehicleType {
   BUS = 'BUS',
@@ -24,16 +23,13 @@ export enum VehicleStatus {
 }
 
 @Entity('vehicles')
-@Index(['companyId', 'agencyId'])
+@Index(['companyId'])
 export class Vehicle {
   @PrimaryGeneratedColumn('uuid')
   id!: string;
 
   @Column({ type: 'uuid' })
   companyId!: string;
-
-  @Column({ type: 'uuid' })
-  agencyId!: string;
 
   @Column({ length: 20 })
   plateNumber!: string;
@@ -50,11 +46,20 @@ export class Vehicle {
   @Column({ type: 'enum', enum: VehicleStatus, default: VehicleStatus.ACTIVE })
   status!: VehicleStatus;
 
-  @ManyToOne(() => Agency, (agency) => agency.vehicles, { onDelete: 'CASCADE' })
-  agency!: Agency;
+  @Column({ type: 'int', default: 0 })
+  totalTrips!: number;
+
+  @Column({ type: 'timestamptz', nullable: true })
+  lastServiceAt?: Date;
+
+  @Column({ type: 'timestamptz', nullable: true })
+  nextServiceAt?: Date;
 
   @OneToMany(() => Trip, (trip) => trip.vehicle)
   trips!: Trip[];
+
+  @OneToMany(() => VehicleMaintenanceLog, (log) => log.vehicle)
+  maintenanceLogs!: VehicleMaintenanceLog[];
 
   @CreateDateColumn()
   createdAt!: Date;

@@ -13,6 +13,14 @@ export class CreateTripDto {
   @IsUUID()
   vehicleId!: string;
 
+  @IsOptional()
+  @IsUUID()
+  driverId?: string;
+
+  @IsOptional()
+  @IsUUID()
+  routeId?: string;
+
   @IsString()
   departureCity!: string;
 

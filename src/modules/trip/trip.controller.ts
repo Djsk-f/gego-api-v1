@@ -1,4 +1,5 @@
 import {
+  BadRequestException,
   Body,
   Controller,
   Delete,
@@ -32,6 +33,9 @@ export class TripController {
     @Body() dto: CreateTripDto,
     @CurrentTenant() tenant: TenantContext,
   ) {
+    if (!tenant.agencyId) {
+      throw new BadRequestException('agencyId is required to create a trip');
+    }
     return this.tripService.createTrip(
       dto,
       tenant.companyId as string,
@@ -59,6 +63,19 @@ export class TripController {
   @Get('search')
   search(@Query() dto: SearchTripsDto) {
     return this.tripService.search(dto);
+  }
+
+  @Get('vehicle/:vehicleId')
+  @UseGuards(JwtAuthGuard, PermissionsGuard, TenantGuard)
+  @Permissions('trip:read')
+  findByVehicle(
+    @Param('vehicleId') vehicleId: string,
+    @CurrentTenant() tenant: TenantContext,
+    @Query() query: PaginationDto,
+  ) {
+    const page = parseInt(query.page ?? '1', 10);
+    const limit = parseInt(query.limit ?? '50', 10);
+    return this.tripService.findByVehicle(vehicleId, tenant.companyId as string, page, limit);
   }
 
   @Get(':id')

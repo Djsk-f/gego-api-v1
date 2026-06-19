@@ -3,12 +3,10 @@ import {
   CreateDateColumn,
   Entity,
   Index,
-  ManyToOne,
   OneToMany,
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
-import { Agency } from '../../agency/entities/agency.entity';
 import { Trip } from '../../trip/entities/trip.entity';
 
 export enum DriverStatus {
@@ -18,16 +16,13 @@ export enum DriverStatus {
 }
 
 @Entity('drivers')
-@Index(['companyId', 'agencyId'])
+@Index(['companyId'])
 export class Driver {
   @PrimaryGeneratedColumn('uuid')
   id!: string;
 
   @Column({ type: 'uuid' })
   companyId!: string;
-
-  @Column({ type: 'uuid' })
-  agencyId!: string;
 
   @Column({ length: 100 })
   firstName!: string;
@@ -41,7 +36,7 @@ export class Driver {
   @Column({ length: 50 })
   licenseNumber!: string;
 
-  @Column({ type: 'decimal', precision: 2, scale: 1, default: 0 })
+  @Column({ type: 'decimal', precision: 3, scale: 1, default: 0 })
   rating!: number;
 
   @Column({ type: 'int', default: 0 })
@@ -49,9 +44,6 @@ export class Driver {
 
   @Column({ type: 'enum', enum: DriverStatus, default: DriverStatus.ACTIVE })
   status!: DriverStatus;
-
-  @ManyToOne(() => Agency, (agency) => agency.drivers, { onDelete: 'CASCADE' })
-  agency!: Agency;
 
   @OneToMany(() => Trip, (trip) => trip.driver)
   trips!: Trip[];

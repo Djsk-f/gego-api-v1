@@ -34,7 +34,6 @@ export class VehicleController {
     return this.vehicleService.createVehicle(
       dto,
       tenant.companyId as string,
-      tenant.agencyId,
     );
   }
 
@@ -42,15 +41,34 @@ export class VehicleController {
   @Permissions('vehicle:read')
   findAll(
     @CurrentTenant() tenant: TenantContext,
-    @Query() query: PaginationDto & { agencyId?: string },
+    @Query() query: PaginationDto,
   ) {
     const page = parseInt(query.page ?? '1', 10);
     const limit = parseInt(query.limit ?? '20', 10);
     return this.vehicleService.findVehiclesByCompany(
       tenant.companyId as string,
-      query.agencyId ?? undefined,
       page,
       limit,
+    );
+  }
+
+  @Get('stats')
+  @Permissions('vehicle:read')
+  getStats(@CurrentTenant() tenant: TenantContext) {
+    return this.vehicleService.getVehicleStats(tenant.companyId as string);
+  }
+
+  @Get('availability')
+  @Permissions('vehicle:read')
+  getAvailable(
+    @CurrentTenant() tenant: TenantContext,
+    @Query('departureTime') departureTime: string,
+    @Query('arrivalTime') arrivalTime: string,
+  ) {
+    return this.vehicleService.findAvailableVehicles(
+      tenant.companyId as string,
+      departureTime,
+      arrivalTime,
     );
   }
 

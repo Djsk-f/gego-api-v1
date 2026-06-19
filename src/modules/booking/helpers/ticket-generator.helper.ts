@@ -6,7 +6,13 @@ import { Ticket, TicketStatus } from '../../ticket/entities/ticket.entity';
 export async function generateSeatsAndTickets(
   manager: EntityManager,
   bookingId: string,
-  seats: { seatNumber: string; passengerName: string; passengerPhone?: string }[],
+  seats: {
+    seatNumber: string;
+    passengerName: string;
+    passengerPhone?: string;
+    departureStopId?: string;
+    arrivalStopId?: string;
+  }[],
 ): Promise<void> {
   for (const seatDto of seats) {
     const seat = manager.create(BookingSeat, {
@@ -14,6 +20,8 @@ export async function generateSeatsAndTickets(
       seatNumber: seatDto.seatNumber,
       passengerName: seatDto.passengerName,
       passengerPhone: seatDto.passengerPhone,
+      departureStopId: seatDto.departureStopId,
+      arrivalStopId: seatDto.arrivalStopId,
     });
 
     const savedSeat = await manager.save(seat);
